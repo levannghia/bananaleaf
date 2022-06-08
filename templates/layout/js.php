@@ -72,12 +72,33 @@
             tiles_type:"justified"
         });
     });
+
 </script>
 <?php }?>
 
 
 <script type="text/javascript">
     $(document).ready(function() {
+
+        $('[data-id-list]').click(function(event){
+            event.preventDefault();
+            var id_list = $(this).attr('data-id-list');
+            $('.hange-prd').removeClass('active');
+            $('#check_id_'+id_list).toggleClass('active');
+
+            $.ajax({
+                type: "GET",
+                url: "ajax/ajax_pr_list.php",
+                data:{
+                    id_list:id_list,
+                },
+                success: function(data){
+                    $('.paging-product-index').html(data);
+                }
+            });
+            
+        });
+
         jQuery(document).ready(function(){
             jQuery('.catagory-title').on("click", function(){
                 if ( $('.catagory-list__fix').css('display') == 'none' ) {

@@ -77,10 +77,7 @@
                         </ul>
                         <?php } ?>
                     </li>
-                    <li class="menulicha <?= $com == 'dich-vu' ? 'active' : '' ?>"><a href="dich-vu"
-                            title="DỊCH VỤ">DỊCH VỤ</a></li>
-                    <li class="menulicha <?= $com == 'tin-tuc' ? 'active' : '' ?>"><a href="tin-tuc" title="TIN TỨC">TIN
-                            TỨC</a></li>
+                    <li class="menulicha <?= $com == 'tin-tuc' ? 'active' : '' ?>"><a href="tin-tuc" title="TIN TỨC">TIN TỨC</a></li>
                     <li class="menulicha <?= $com == 'video' ? 'active' : '' ?>"><a href="video" title="VIDEO">VIDEO</a>
                     </li>
                     <li class="menulicha <?= $com == 'lien-he' ? 'active' : '' ?>"><a href="lien-he"

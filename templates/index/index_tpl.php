@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="title">Welcome to <br> Cháo Lòng Hà Nội</div>
+                <div class="title">Welcome to <br> <?= $setting['tenvi'] ?></div>
                 <div class="gt_noidung"><?= htmlspecialchars_decode($gioithieu['mota' . $lang]) ?></div>
                 <a class="xemgt" href="gioi-thieu">XEM THÊM</a>
             </div>
@@ -63,20 +63,20 @@
 <div class="br-index" id="background-thucdon">
     <div class="wrapper">
         <div class="tieude_gt">
-            <h2 class="cl-v">Thực đơn cháo lòng hà nội</h2>
+            <h2 class="cl-v">Thực đơn <?= $setting['tenvi'] ?></h2>
             <p class="cl-w">THỰC ĐƠN quán chúng tôi rất đa dạng và phong phú !!!</p>
         </div>
         <div class="menulist">
             <?php foreach($pr_list as $v) {?>
-            <p><a class="hange-prd " href="<?= $v[$sluglang]?>"><span><?= $v['ten'.$lang] ?></span></a></p>
+            <p><a id="check_id_<?= $v['id'] ?>" class="hange-prd" data-id-list="<?= $v['id'] ?>" href=""><span><?= $v['ten'.$lang] ?></span></a></p>
             <?php } ?>
         </div>
         <div class="show_bot">
 
             <?php if($pronb_list['numb']>0){?>
-            <div class="bd_index row paging-product-index" id="load_pro_0" data-id="0">
-                <?php }?>
-            </div>
+                <div class="bd_index row paging-product-index" id="load_pro_0" data-id="0"></div>
+            <?php }?>
+            
         </div>
     </div>
 </div>
@@ -120,7 +120,7 @@
 <div class="visao" id="background-dichvu">
     <div class="wrapper container">
         <div class="tieude_sl br-w">
-            <h2 class="cl-v">Vì sao chọn cháo lòng hà nội</h2>
+            <h2 class="cl-v">Vì sao chọn <?= $setting['tenvi'] ?></h2>
         </div>
         <div style="margin: 0 -10px;">
             <div class="owl-carousel owl-theme owl-vs">
@@ -153,7 +153,7 @@
 <div class="wrap_bottom">
     <div class="fixwidth">
         <div class="d-flex justify-content-center flex-wrap">
-            <div class="title-video">TIN TỨC MỚI</div>
+            <div class="title-video">Tin tức mới</div>
             <div class="container py-4">
                 <div class="owl-carousel owl-theme owl-product-nb">
                     <?php foreach($tintuc as $v){ ?>
@@ -183,7 +183,7 @@
 
 <div class="fixwidth mb-4">
     <div class="video">
-        <div class="title-video">MENU</div>
+        <div class="title-video">Menu</div>
         <div class="owl-carousel owl-theme owl-vs">
             <?php foreach($hinhanh as $v){ ?>
             <div class="tailvideo_item1">
@@ -201,7 +201,7 @@
 
 <div class="fixwidth mb-4">
     <div class="video">
-        <div class="title-video">VIDEO CLIP</div>
+        <div class="title-video">Video Clip</div>
         <div class="owl-carousel owl-theme auto_video">
             <?php foreach($video as $v){ ?>
             <div class="tailvideo_item1">
