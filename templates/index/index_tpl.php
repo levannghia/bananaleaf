@@ -67,9 +67,9 @@
             <p class="cl-w">THỰC ĐƠN quán chúng tôi rất đa dạng và phong phú !!!</p>
         </div>
         <div class="menulist">
-			<?php foreach($pr_list as $v) {?>
+            <?php foreach($pr_list as $v) {?>
             <p><a class="hange-prd " href="<?= $v[$sluglang]?>"><span><?= $v['ten'.$lang] ?></span></a></p>
-			<?php } ?>
+            <?php } ?>
         </div>
         <div class="show_bot">
 
@@ -159,15 +159,15 @@
                     <?php foreach($tintuc as $v){ ?>
                     <div>
                         <div class="news_bt w-clear">
-                                <div class="pic-news scale-img">
-                                    <a class="text-decoration-none" href="<?= $v[$sluglang] ?>"
-                                        title="<?= $v['ten' . $lang] ?>"><img
-                                            onerror="this.src='<?= THUMBS ?>/150x150x1/assets/images/noimage.png';"
-                                            src="<?= THUMBS ?>/240x200x1/<?= UPLOAD_NEWS_L . $v['photo'] ?>"
-                                            alt="<?= $v['ten' . $lang] ?>">
-                                    </a>
-                                </div>
-                                <div class="info-news">
+                            <div class="pic-news scale-img">
+                                <a class="text-decoration-none" href="<?= $v[$sluglang] ?>"
+                                    title="<?= $v['ten' . $lang] ?>"><img
+                                        onerror="this.src='<?= THUMBS ?>/150x150x1/assets/images/noimage.png';"
+                                        src="<?= THUMBS ?>/240x200x1/<?= UPLOAD_NEWS_L . $v['photo'] ?>"
+                                        alt="<?= $v['ten' . $lang] ?>">
+                                </a>
+                            </div>
+                            <div class="info-news">
                                 <h3 class="name-news"><a class="text-decoration-none" href="<?= $v[$sluglang] ?>"
                                         title="<?= $v['ten' . $lang] ?>"><?= $v['ten' . $lang] ?></a></h3>
                                 <div class="desc-news text-split"><?= $v['mota' . $lang] ?></div>
@@ -183,12 +183,29 @@
 
 <div class="fixwidth mb-4">
     <div class="video">
+        <div class="title-video">MENU</div>
+        <div class="owl-carousel owl-theme owl-vs">
+            <?php foreach($hinhanh as $v){ ?>
+            <div class="tailvideo_item1">
+                <a class="" data-fancybox="gallery" data-src="<?=UPLOAD_NEWS_L.$v['photo']?>"
+                    title="<?=$v['ten'.$lang]?>">
+                    <p><img onerror="this.src='<?=THUMBS?>/480x360x2/assets/images/noimage.png';"
+                            src="<?=THUMBS?>/300x430x1/<?=UPLOAD_NEWS_L.$v['photo']?>"
+                            alt="<?=$v['ten'.$lang]?>" alt="<?=$v['ten'.$lang]?>" /></p>
+                </a>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+
+<div class="fixwidth mb-4">
+    <div class="video">
         <div class="title-video">VIDEO CLIP</div>
         <div class="owl-carousel owl-theme auto_video">
-			<?php foreach($video as $v){ ?>
-				<div class="tailvideo_item1">
-                <a class="" data-fancybox="video" data-src="<?= $v['video'] ?>"
-                    title="<?= $v['ten' . $lang] ?>">
+            <?php foreach($video as $v){ ?>
+            <div class="tailvideo_item1">
+                <a class="" data-fancybox="video" data-src="<?= $v['video'] ?>" title="<?= $v['ten' . $lang] ?>">
                     <p class="pic-video"><img onerror="this.src='<?= THUMBS ?>/480x360x2/assets/images/noimage.png';"
                             src="https://img.youtube.com/vi/<?= $func->getYoutube($v['video']) ?>/maxresdefault.jpg"
                             alt="<?= $v['ten' . $lang] ?>" /></p>
@@ -196,25 +213,7 @@
                 <div class="name-video"><a data-fancybox="video" data-src="<?= $v['video'] ?>"
                         title="<?= $v['ten' . $lang] ?>"><?= $v['ten' . $lang] ?></a></div>
             </div>
-			<?php } ?>
-            <!-- </?php if (isset($video) && count($video) > 0) {
-				for ($i = 0; $i < count($video); $i++) { ?>
-            </?php if($video[$i]['noidungvi'] != ""){ ?>
-            </?= htmlspecialchars_decode($video[$i]['noidungvi']) ?>
-            </?php } else { ?>
-            <div class="tailvideo_item1">
-                <a class="" data-fancybox="video" data-src="<?= $video[$i]['video'] ?>"
-                    title="<?= $video[$i]['ten' . $lang] ?>">
-                    <p class="pic-video"><img onerror="this.src='<?= THUMBS ?>/480x360x2/assets/images/noimage.png';"
-                            src="https://img.youtube.com/vi/<?= $func->getYoutube($video[$i]['video']) ?>/maxresdefault.jpg"
-                            alt="<?= $video[$i]['ten' . $lang] ?>" /></p>
-                </a>
-                <div class="name-video"><a data-fancybox="video" data-src="<?= $video[$i]['video'] ?>"
-                        title="<?= $video[$i]['ten' . $lang] ?>"><?= $video[$i]['ten' . $lang] ?></a></div>
-            </div>
-            <div>
-            </div>
-            </?php } } } ?> -->
+            <?php } ?>
         </div>
     </div>
 </div>

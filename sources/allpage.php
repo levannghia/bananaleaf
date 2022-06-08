@@ -8,7 +8,7 @@
 
     $splistmenu = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_product_list where type = ? and hienthi > 0 order by stt,id desc",array('san-pham'));
     $ctlistmenu = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news_list where type = ? and hienthi > 0 order by stt,id desc",array('cong-trinh'));
-
+    $hinhanh = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news where type = ? and hienthi > 0 and noibat > 0 order by stt,id desc",array('hinh-anh'));
    
  
     $footer = $d->rawQueryOne("select ten$lang, noidung$lang from #_static where type = ? limit 0,1",array('footer'));

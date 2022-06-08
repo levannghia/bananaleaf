@@ -66,8 +66,8 @@ NN_FRAMEWORK.AltImages = function(){
 NN_FRAMEWORK.FixMenu = function(){
     $(window).scroll(function(){
         let hei=$('.header-cachtop').height();
-        if($(window).scrollTop() >= hei + 130) $(".header-top").addClass('fixed');
-        else $(".header-top").removeClass('fixed');
+        if($(window).scrollTop() >= hei) $("#menu_top").addClass('fixed');
+        else $("#menu_top").removeClass('fixed');
     });
 };
 

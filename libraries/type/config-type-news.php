@@ -88,7 +88,7 @@
     $nametype = "hinh-anh";
     $config['news'][$nametype]['title_main'] = "Ảnh";
     $config['news'][$nametype]['dropdown'] = false;
-    $config['news'][$nametype]['check'] = array();
+    $config['news'][$nametype]['check'] = array('noibat'=> 'Nổi bật');
     $config['news'][$nametype]['view'] = true;
     $config['news'][$nametype]['slug'] = false;
     $config['news'][$nametype]['copy'] = true;
