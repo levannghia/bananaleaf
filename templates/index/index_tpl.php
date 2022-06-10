@@ -182,7 +182,7 @@
 </div>
 
 <div class="fixwidth mb-4">
-    <div class="video">
+    <div class="video d-flex justify-content-center flex-wrap">
         <div class="title-video">Menu</div>
         <div class="owl-carousel owl-theme owl-vs">
             <?php foreach($hinhanh as $v){ ?>
@@ -200,7 +200,7 @@
 </div>
 
 <div class="fixwidth mb-4">
-    <div class="video">
+    <div class="video d-flex justify-content-center flex-wrap">
         <div class="title-video">Video Clip</div>
         <div class="owl-carousel owl-theme auto_video">
             <?php foreach($video as $v){ ?>

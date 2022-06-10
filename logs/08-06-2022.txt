@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ::1()--query--tables(delete from table_user_online where time < 1654691252) (19:37:32 08/06/2022)
 ::1()--query--tables(delete from table_user_online where time < 1654691253) (19:37:33 08/06/2022)
 ::1()--query--tables(delete from table_user_online where time < 1654691255) (19:37:35 08/06/2022)
@@ -172,3 +173,7 @@
 ::1(admin)--update--photo([["","id","=","1"],["AND","type","=","favicon"]]) (21:37:06 08/06/2022)
 ::1(admin)--query--tables(delete from table_user_online where time < 1654698427) (21:37:07 08/06/2022)
 ::1(admin)--query--tables(delete from table_user_online where time < 1654698429) (21:37:09 08/06/2022)
+=======
+127.0.0.1(admin)--query--tables(delete from table_user_online where time < 1654672041) (14:17:21 08/06/2022)
+127.0.0.1(admin)--query--tables(delete from table_user_online where time < 1654672355) (14:22:35 08/06/2022)
+>>>>>>> a4fc65b (u)

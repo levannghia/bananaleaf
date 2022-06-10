@@ -73,10 +73,14 @@ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-
 /* Menu */
 /*=====menu======*/
 /* .diachi-top{ background:url(../images/img-data/map.png) no-repeat left center; padding-left:20px; line-height:30px; } */
-.header-top{ background: #088000; padding: 5px 0; color: #f38321;position: relative;height: 15px;}
+.diachi-top{
+    color: #088000;
+    font-weight: 600;
+}
+.header-top{ background: #fff; padding: 5px 0; color: #fff;position: relative;height: 35px;font-family: 'Font Awesome 5 Pro';}
 .header{ padding: 15px 0; }
 .header_logo{ position: relative; z-index: 10000; padding-right: 20px;  }
-.header_logo img{ transition: all 0.3s; max-height:120px; border-radius: 50%;}
+.header_logo img{ transition: all 0.3s; max-height:120px; }
 .boxmenu_right{ }
 .icon-head .icon-img{ padding-right: 8px; }
 .icon-head .icon-info{ line-height: 1.2; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 3px 3px 5px #000; font-family: 'UTMAvoBold'; }
@@ -118,7 +122,7 @@ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-
 .menu ul.menu_cap_cha li{transition:all ease-in-out 0.2s;position:relative; }
 .menu ul.menu_cap_cha li.first-li{ position:initial !important;}
 .menu ul.menu_cap_cha li.menulicha:last-child{padding-right:0;float:right; }
-.menu ul.menu_cap_cha li.menulicha>a{font-family: 'Tapestry', cursive; color:#088000; font-size: 16px; font-weight: 600; text-decoration: none; display: block; cursor: pointer;  padding: 0px 8px ; height: 50px; line-height: 50px; } 
+.menu ul.menu_cap_cha li.menulicha>a{font-family: 'Roboto Slab'; color:#088000; font-size: 16px; font-weight: 600; text-decoration: none; display: block; cursor: pointer;  padding: 0px 8px ; height: 50px; line-height: 50px; } 
 .menu ul.menu_cap_cha li.menulicha>a:hover{ color:#f38321 !important; }
 .menu ul.menu_cap_cha li.active>a{
     background: #f38321 ;
@@ -133,12 +137,12 @@ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-
 
 .menu_cap_cha .desk-hide{ display: none; }
 /*---menu cấp con---*/
-.menu_cap_con{position:absolute;display:none;transition:all ease 0.5s;left: 0px; top:100%; background: #000; z-index: 99;}
+.menu_cap_con{position:absolute;display:none;transition:all ease 0.5s;left: 0px; top:100%; background: #fff; z-index: 99;}
 .menu_cap_con li{ padding: 0 !important; }
-.menu_cap_con li a{display:block; width:100%; min-width: 220px; font-size: 17px; font-family: 'Tapestry', cursive; float:none !important; transition:all ease 0.2s; line-height: initial !important; padding: 12px 10px !important; position: relative; border-bottom: 1px solid rgba(255,255,255,0.5); margin:0px; color:#fff !important;}
+.menu_cap_con li a{display:block; width:100%; min-width: 220px; font-size: 17px; font-family: 'Tapestry', cursive; float:none !important; transition:all ease 0.2s; line-height: initial !important; padding: 12px 10px !important; position: relative; border-bottom: 1px solid rgba(255,255,255,0.5); margin:0px; color:#000 !important;}
 .menu_cap_con li:last-child a{ border-bottom: none;}
-.fixed .menu_cap_con li, .tail_menu .menu_cap_con li{background:#000 !important;}
-.fixed .menu ul.menu_cap_cha li.menulicha>a{font-family: 'Tapestry', cursive; color:#088000; font-size: 16px; text-decoration: none; display: block; cursor: pointer;  padding: 0px 8px ; height: 50px; line-height: 50px; } 
+.fixed .menu_cap_con li, .tail_menu .menu_cap_con li{background:#fff !important;}
+.fixed .menu ul.menu_cap_cha li.menulicha>a{font-family: 'Roboto Slab'; color:#088000; font-size: 16px; text-decoration: none; display: block; cursor: pointer;  padding: 0px 8px ; height: 50px; line-height: 50px; } 
 .menu_cap_con li:hover{background:#f38321 !important; color: #000 !important;}
 .menu_cap_cha li:hover .menu_cap_con{display:block;}
 .menu_cap_con li:hover .menu_cap_2{ display:block; }
@@ -241,7 +245,7 @@ transform: rotate(0deg) scale(1, 1) skew(26deg, 0deg) translate(0, 0);
 
 
 /* Breadcrumb */
-.breadCrumbs{background-color:#eee;margin-bottom:25px;margin-top: 9%;}
+.breadCrumbs{background-color:#eee;margin-bottom:25px;border-top: 2px solid #088000;}
 .breadCrumbs .wrap-content{padding:0.75rem 10px;max-width:1200px;}
 .breadCrumbs .wrap-content .breadcrumb{padding:0;margin-bottom:0;background-color:transparent;border-radius:0;}
 .breadCrumbs .wrap-content .breadcrumb-item a{color:var(--color-black);}
@@ -306,8 +310,15 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Colo
 .item_dv .desc-news{color:#fff; margin-top:5px; line-height:22px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
  
-.title-video{font-family: 'Roboto Slab', serif;font-size: 29px; background: url(../images/img-data/line.png) no-repeat bottom center; padding-bottom: 15px; color:#3b7e31; margin-bottom: 30px; text-align: center; text-transform: uppercase;}
-
+.title-video{font-family: 'Roboto Slab', serif;font-size: 29px; position: relative; padding-bottom: 15px; color:#f38321; margin-bottom: 30px; text-align: center; text-transform: uppercase;}
+.title-video::before{
+    content: '';
+    position: absolute;
+    background: url(../images/img-data/line.png) no-repeat center;
+    height: 35px;
+    width: 100%;
+    top: 80%;
+}
 .loadkhung_video{display: grid;grid-template-columns: repeat(3,1fr); grid-gap:28px;}
 .tailvideo_item1{ position: relative; margin-bottom: 12px; }
 .tailvideo_item1 .name-video{text-align: center;}
@@ -644,7 +655,7 @@ div.menu_mobi, div.menu_mobi_add { display: none;}
     .wrap_gioithieu{ margin-top: 0; }
 }
 @media(max-width:1000px){
-	
+	.owl-carousel .owl-item img{width: 100%;}
 	.header .fixwidth { flex-wrap: wrap;  }
 	.loadkhung_product { grid-gap: 15px;}
 	.loadkhung_product1{ grid-template-columns: repeat(3,1fr); grid-gap:15px;}
@@ -672,6 +683,12 @@ display: none !important;
 }
 }
 @media(max-width:769px){
+    .footer .col-md-4:nth-child(2){
+        margin-bottom: 0 !important;
+    }
+    .footer .col-md-4:nth-child(3){
+        padding-top: 0 !important;
+    }
 .all_lienhe{
 display: block !important;
 }
@@ -679,7 +696,7 @@ display: block !important;
 .header-top{height: 60px !important;}
 .mxh_header{    border: none !important;}
 .thong_tin_header{display: block !important; text-align: right;}
-.title-video{margin-bottom: 0 !important;}
+.title-video{margin-bottom: 15px !important;}
 .wrap_bottom{padding: 20px 0 !important; }
 .visao{padding-bottom: 0 !important;}
 .br-index{padding-bottom: 0 !important;}
@@ -818,18 +835,9 @@ display: block !important;
 	align-items: center;
     margin-top: 10px;
 }
-.diachi-top{
-	width: 35%;
-	border-bottom: 1px solid #f38321;
-    height: 35px;
-}
 .thong_tin_header{
 	display: flex;
 	justify-content: space-between;
-}
-.diachi-top p {
-	/* padding-bottom: 15px;
-	border-bottom: 1px solid #fff; */
 }
 .logo_header{	
     position: absolute;
@@ -951,9 +959,9 @@ height: 405px;
 }
 
 .tieude_gt p {
-    color: #f38321;
+    color: #fff;
     font-size: 15px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .menulist {
@@ -1060,8 +1068,8 @@ color: #000;
     font-size: 13px;
 }
 .bd_index{
-	padding-left: 50px;
-    padding-right: 50px;
+	padding-left: 30px;
+    padding-right: 30px;
 }
 
 .prdid {
@@ -1298,13 +1306,14 @@ color: #f38321;
     line-height: 1.8;
     width: 100%;
     margin-bottom: 10px;
+    font-family: -webkit-body;
 }
 .footer__title {
     margin-bottom: 10px;
     position: relative;
     font-weight: normal;
     color: #fff;
-    font-size: 15px;
+    font-size: 22px;
     text-transform: uppercase;
     line-height: 35px;
 }
@@ -1338,7 +1347,7 @@ color: #f38321;
 
 .bg-nhantin {
     position: relative;
-    background: #fec200;
+    background: #f38321;
     text-align: center;
     padding: 30px 20px;
     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
@@ -1351,7 +1360,7 @@ color: #f38321;
     margin-bottom: 20px !important;
     text-transform: uppercase;
     font-size: 20px;
-    color: #3b7e31;
+    color: #fff;
     margin: 0 50px;
 }
 .footer__nhantin {

@@ -17,6 +17,14 @@
                             class="far fa-search"></i></button>
                 </div>
             </div>
+            <div class="diachi-top">
+                Địa chỉ: <?=$optsetting['diachi']?>
+            </div>
+            <div>
+                <?php foreach($social1 as $v) { ?>
+                <a href="<?=$v['link']?>" class="ftmxh" target="_blank" title="<?=$v['ten'.$lang]?>"><img onerror="this.src='<?=THUMBS?>/30x30x2/assets/images/noimage.png';" src="<?=THUMBS?>/0x25x1/<?=UPLOAD_PHOTO_L.$v['photo']?>" alt="<?=$v['ten'.$lang]?>" title="<?=$v['ten'.$lang]?>"/></a>
+                <?php }?>
+            </div>
         </div>
     </div>
 </div>

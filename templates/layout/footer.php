@@ -123,8 +123,8 @@
                     </div>
                     <div class="fan">
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href= <?= $optsetting['fanpage'] ?>&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=590530215089180"
-                            width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            src="https://www.facebook.com/plugins/page.php?href= <?= $optsetting['fanpage'] ?>&tabs=timeline&width=370&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=590530215089180"
+                            width="370" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
