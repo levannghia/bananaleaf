@@ -44,21 +44,10 @@
                 </div>
                 <?php } ?>
             </div>
-            <!-- <div class="paging-product-index" id="load_pro_0" data-id="0"></div> -->
         </div>
     </div>
 </div>
 <?php } ?>
-<!-- <?php if ($ct_list['numb'] > 0) { ?>
-	<div class="wrap_product">
-		<div class="wrap_product_index toppd0">
-			<div class="fixwidth">
-				<div class="title">CÔNG TRÌNH NỔI BẬT</div>
-				<div class="paging-product"></div>
-			</div>
-		</div>
-	</div>
-<?php } ?> -->
 
 <div class="br-index" id="background-thucdon">
     <div class="wrapper">
