@@ -13,6 +13,7 @@
 127.0.0.1()--query--tables(delete from table_user_online where time < 1654830963) (10:26:03 10/06/2022)
 127.0.0.1()--update--news([["","id","=","4"]]) (10:26:03 10/06/2022)
 127.0.0.1()--query--tables(delete from table_user_online where time < 1654830966) (10:26:06 10/06/2022)
+<<<<<<< HEAD
 ::1()--query--tables(delete from table_user_online where time < 1654864883) (19:51:23 10/06/2022)
 ::1(admin)--query--tables(delete from table_user_online where time < 1654864930) (19:52:10 10/06/2022)
 ::1(admin)--update--photo([["","id","=","14"],["AND","type","=","mxh"]]) (19:53:09 10/06/2022)
@@ -116,3 +117,6 @@
 116.102.33.80(admin)--query--tables(delete from table_user_online where time < 1654868744) (20:55:44 10/06/2022)
 116.102.33.80(admin)--query--tables(delete from table_user_online where time < 1654868907) (20:58:27 10/06/2022)
 116.102.33.80(admin)--query--tables(delete from table_user_online where time < 1654868919) (20:58:39 10/06/2022)
+=======
+127.0.0.1()--query--tables(delete from table_user_online where time < 1654831097) (10:28:17 10/06/2022)
+>>>>>>> ca26d95 (u)

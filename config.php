@@ -38,7 +38,7 @@
 			// 'dbname' => 'stgr120925_maihien',
 			'username' => 'root',
 			'password' => '',
-			'dbname' => 'chaolong_db',
+			'dbname' => 'banana _left',
 			'port' => 3306,
 			'prefix' => 'table_',
 			'charset' => 'utf8'

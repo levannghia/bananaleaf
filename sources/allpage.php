@@ -17,8 +17,6 @@
 
     $cs = $d->rawQuery("select ten$lang, tenkhongdau$lang from #_news where type = ? and hienthi > 0 order by stt,id desc ",array('chinh-sach'));
 
-    //$tagsProduct = $d->rawQuery("select ten$lang, tenkhongdauvi, tenkhongdauen, id from #_tags where type = ? and noibat > 0 order by stt,id desc",array('san-pham'));
-
     /* Get statistic */
     $counter = $statistic->getCounter();
     $online = $statistic->getOnline();
