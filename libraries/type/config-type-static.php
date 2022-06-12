@@ -2,7 +2,7 @@
     /* Giới thiệu */
     $nametype = "gioi-thieu";
     $config['static'][$nametype]['title_main'] = "Giới thiệu";
-    $config['static'][$nametype]['images'] = false;
+    $config['static'][$nametype]['images'] = true;
     $config['static'][$nametype]['images2'] = false;
     $config['static'][$nametype]['file'] = false;
     $config['static'][$nametype]['tieude'] = false;
@@ -11,8 +11,8 @@
     $config['static'][$nametype]['noidung'] = true;
     $config['static'][$nametype]['noidung_cke'] = true;
     $config['static'][$nametype]['seo'] = false;
-    $config['static'][$nametype]['width'] = 465;
-    $config['static'][$nametype]['height'] = 315;    
+    $config['static'][$nametype]['width'] = 480;
+    $config['static'][$nametype]['height'] = 457;    
     $config['static'][$nametype]['width1'] = 440;
     $config['static'][$nametype]['height1'] = 325;
     /*$config['static'][$nametype]['gallery'] = array(

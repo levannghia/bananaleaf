@@ -7,10 +7,10 @@
                 <a class="xemgt" href="gioi-thieu">XEM THÊM</a>
             </div>
             <div class="col-md-6">
-                <div class="gioi_thieu_img" id="gioithieu_right">
-                    <!-- <div>
-						<img onerror="this.src='<?= THUMBS ?>/150x150x1/assets/images/noimage.png';" src="/upload/images/gioithieu.jpg" alt="">
-					</div> -->
+                <div class="gioi_thieu_img">
+                    <div>
+						<img onerror="this.src='<?= THUMBS ?>/150x150x1/assets/images/noimage.png';" src="<?= THUMBS ?>/540x405x1/<?= UPLOAD_NEWS_L . $gioithieu['photo'] ?>" alt="">
+					</div>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="wrap_product_index">
         <div class="fixwidth">
             <div class="tieude_gt">
-                <h2 class="cl-v">Đặt sản miền bắc</h2>
+                <h2 class="cl-v">Món ăn nổi bật</h2>
                 <p class="cl-w py-2">THỰC ĐƠN quán chúng tôi rất đa dạng và phong phú !!!</p>
             </div>
             <div class="owl-carousel owl-theme owl-product-nb">

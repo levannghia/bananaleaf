@@ -7,8 +7,8 @@
     $baner = $d->rawQueryOne("select id, photo from #_photo where type = ? and act = ? limit 0,1",array('baner','photo_static'));
 
     $splistmenu = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_product_list where type = ? and hienthi > 0 order by stt,id desc",array('san-pham'));
-    $ctlistmenu = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news_list where type = ? and hienthi > 0 order by stt,id desc",array('cong-trinh'));
-    $hinhanh = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news where type = ? and hienthi > 0 and noibat > 0 order by stt,id desc",array('hinh-anh'));
+    $menu_list = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news_list where type = ? and hienthi > 0 order by stt,id desc",array('menux'));
+    $hinhanh = $d->rawQuery("select ten$lang, tenkhongdauvi, id,photo from #_news where type = ? and hienthi > 0 and noibat > 0 order by stt,id desc",array('menux'));
    
  
     $footer = $d->rawQueryOne("select ten$lang, noidung$lang from #_static where type = ? limit 0,1",array('footer'));

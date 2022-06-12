@@ -1,5 +1,5 @@
 <!-- Basehref -->
-<base href="<?=$config_base?>"/>
+<base href="<?=$_SERVER["SERVER_NAME"];?>"/>
 
 <!-- UTF-8 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

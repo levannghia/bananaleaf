@@ -29,18 +29,33 @@
 
   
     /* Slideshow */
+    // $nametype = "slide";
+    // $config['photo']['man_photo'][$nametype]['title_main_photo'] = "Slideshow";
+    // $config['photo']['man_photo'][$nametype]['number_photo'] = 1;
+    // $config['photo']['man_photo'][$nametype]['images_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['avatar_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['link_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['tieude_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['mota_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['mota_cke_photo'] = true;
+    // $config['photo']['man_photo'][$nametype]['width_photo'] = 910;
+    // $config['photo']['man_photo'][$nametype]['height_photo'] = 400;
+    // $config['photo']['man_photo'][$nametype]['thumb_photo'] = '200x100x1';
+    // $config['photo']['man_photo'][$nametype]['img_type_photo'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
+
     $nametype = "slide";
-    $config['photo']['man_photo'][$nametype]['title_main_photo'] = "Slideshow";
-    $config['photo']['man_photo'][$nametype]['number_photo'] = 2;
-    $config['photo']['man_photo'][$nametype]['images_photo'] = true;
-    $config['photo']['man_photo'][$nametype]['avatar_photo'] = true;
-    $config['photo']['man_photo'][$nametype]['link_photo'] = true;
-    $config['photo']['man_photo'][$nametype]['tieude_photo'] = true;
-    $config['photo']['man_photo'][$nametype]['mota_photo'] = true;
-    $config['photo']['man_photo'][$nametype]['width_photo'] = 910;
-    $config['photo']['man_photo'][$nametype]['height_photo'] = 380;
-    $config['photo']['man_photo'][$nametype]['thumb_photo'] = '200x100x1';
-    $config['photo']['man_photo'][$nametype]['img_type_photo'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
+    $config['photo']['photo_static'][$nametype]['title_main'] = "Slideshow";
+    // $config['photo']['photo_static'][$nametype]['number_photo'] = 1;
+    $config['photo']['photo_static'][$nametype]['images'] = true;
+    $config['photo']['photo_static'][$nametype]['avatar'] = true;
+    $config['photo']['photo_static'][$nametype]['link'] = true;
+    $config['photo']['photo_static'][$nametype]['tieude'] = true;
+    $config['photo']['photo_static'][$nametype]['mota'] = true;
+    $config['photo']['photo_static'][$nametype]['mota_cke'] = true;
+    $config['photo']['photo_static'][$nametype]['width'] = 910;
+    $config['photo']['photo_static'][$nametype]['height'] = 400;
+    $config['photo']['photo_static'][$nametype]['thumb'] = '200x100x1';
+    $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
     /* Slideshow */
     // $nametype = "hinh-anh";
@@ -60,7 +75,7 @@
     /* Slideshow */
     $nametype = "mxh";
     $config['photo']['man_photo'][$nametype]['title_main_photo'] = "Mạng xã hội";
-    $config['photo']['man_photo'][$nametype]['number_photo'] = 2;
+    $config['photo']['man_photo'][$nametype]['number_photo'] = 1;
     $config['photo']['man_photo'][$nametype]['images_photo'] = true;
     $config['photo']['man_photo'][$nametype]['avatar_photo'] = true;
     $config['photo']['man_photo'][$nametype]['link_photo'] = true;
@@ -85,7 +100,15 @@
     // $config['photo']['man_photo'][$nametype]['thumb_photo'] = '55x55x2';
     // $config['photo']['man_photo'][$nametype]['img_type_photo'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
- 
+ /* Background */
+ $nametype = "background-menux";
+ $config['photo']['photo_static'][$nametype]['title_main'] = "Background menu";
+ $config['photo']['photo_static'][$nametype]['images'] = true;
+ $config['photo']['photo_static'][$nametype]['background'] = true;
+ $config['photo']['photo_static'][$nametype]['width'] = 1366;
+ $config['photo']['photo_static'][$nametype]['height'] = 300;
+ $config['photo']['photo_static'][$nametype]['thumb'] = '1366x400x1';
+ $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
   
     /* Background */
     $nametype = "background-tieuchi";
@@ -97,9 +120,11 @@
     $config['photo']['photo_static'][$nametype]['thumb'] = '1366x300x1';
     $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
+     
+
     /* Background */
     $nametype = "background-thucdon";
-    $config['photo']['photo_static'][$nametype]['title_main'] = "Background Thực Đơn";
+    $config['photo']['photo_static'][$nametype]['title_main'] = "Background sản phẩm";
     $config['photo']['photo_static'][$nametype]['images'] = true;
     $config['photo']['photo_static'][$nametype]['background'] = true;
     $config['photo']['photo_static'][$nametype]['width'] = 1366;
@@ -107,14 +132,14 @@
     $config['photo']['photo_static'][$nametype]['thumb'] = '1366x300x1';
     $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
     /* Background */
-    $nametype = "gioithieu_right";
-    $config['photo']['photo_static'][$nametype]['title_main'] = "Giới Thiệu Right";
-    $config['photo']['photo_static'][$nametype]['images'] = true;
-    $config['photo']['photo_static'][$nametype]['background'] = true;
-    $config['photo']['photo_static'][$nametype]['width'] = 540;
-    $config['photo']['photo_static'][$nametype]['height'] = 405;
-    $config['photo']['photo_static'][$nametype]['thumb'] = '540x405x1';
-    $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
+    // $nametype = "gioithieu_right";
+    // $config['photo']['photo_static'][$nametype]['title_main'] = "Giới Thiệu Right";
+    // $config['photo']['photo_static'][$nametype]['images'] = true;
+    // $config['photo']['photo_static'][$nametype]['background'] = true;
+    // $config['photo']['photo_static'][$nametype]['width'] = 540;
+    // $config['photo']['photo_static'][$nametype]['height'] = 405;
+    // $config['photo']['photo_static'][$nametype]['thumb'] = '540x405x1';
+    // $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
  
     /* Background*/
     $nametype = "background-dichvu";

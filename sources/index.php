@@ -1,12 +1,13 @@
 <?php  
 	if(!defined('SOURCES')) die("Error");
  
-    $slider = $d->rawQuery("select ten$lang, mota$lang, photo, link from #_photo where type = ? and hienthi > 0 order by stt,id desc",array('slide'));
+    $slider = $d->rawQueryOne("select ten$lang, mota$lang, photo, link from #_photo where type = ? and hienthi > 0 and act = ? order by stt,id desc limit 0,1",array('slide','photo_static'));
+    // var_dump($slider); die();
     $kh = $d->rawQuery("select ten$lang, mota$lang, photo,diachi from #_news where type = ? and hienthi > 0 order by stt,id desc ",array('feedback'));
 
     $pronb_list = $d->rawQueryOne("select count(id) as numb from #_product where noibat>0 and hienthi>0 and type='san-pham'");
     $pr_list = $d->rawQuery("select ten$lang ,tenkhongdau$lang ,id from #_product_list where  hienthi>0 and type='san-pham'");
-    $product_nb = $d->rawQuery("select * from #_product where noibat>0 and hienthi>0 and type='dac-san' order by stt,id desc");
+    $product_nb = $d->rawQuery("select * from #_product where noibat>0 and hienthi>0 and type='san-pham' order by stt,id desc");
     $product_nu = $d->rawQuery("select ten$lang,photo,id,gia from #_product where noibat>0 and hienthi>0 and type='thuc-uong' order by stt,id desc");
     $ct_list = $d->rawQueryOne("select count(id) as numb from #_news where noibat>0 and hienthi>0 and type='cong-trinh'");
 

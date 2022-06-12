@@ -88,16 +88,17 @@
 		array("tbl"=>"product_cat","field"=>"idc","source"=>"product","com"=>"san-pham","type"=>"san-pham",'menu'=>true),
 		array("tbl"=>"product_item","field"=>"idi","source"=>"product","com"=>"san-pham","type"=>"san-pham",'menu'=>true),
 		array("tbl"=>"product","field"=>"id","source"=>"product","com"=>"san-pham","type"=>"san-pham",'menu'=>true),
-		array("tbl"=>"product","field"=>"id","source"=>"product","com"=>"dac-san","type"=>"dac-san",'menu'=>true),
+		// array("tbl"=>"product","field"=>"id","source"=>"product","com"=>"dac-san","type"=>"dac-san",'menu'=>true),
 	 
 		/* Sản phẩm */
-		array("tbl"=>"news_list","field"=>"idl","source"=>"news","com"=>"cong-trinh","type"=>"cong-trinh",'menu'=>true),
-	 	array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"cong-trinh","type"=>"cong-trinh",'menu'=>true),
+		// array("tbl"=>"news_list","field"=>"idl","source"=>"news","com"=>"cong-trinh","type"=>"cong-trinh",'menu'=>true),
+	 	// array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"cong-trinh","type"=>"cong-trinh",'menu'=>true),
 
 
 		/* Bài viết */		
 		array("tbl"=>"video","field"=>"id","source"=>"news","com"=>"video","type"=>"video",'menu'=>false),
-		array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"hinh-anh","type"=>"hinh-anh",'menu'=>false),
+		array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"menux","type"=>"menux",'menu'=>false),
+		array("tbl"=>"news_list","field"=>"idl","source"=>"news","com"=>"menux","type"=>"menux",'menu'=>true),
 		array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"tin-tuc","type"=>"tin-tuc",'menu'=>true),
 		array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"dich-vu","type"=>"dich-vu",'menu'=>true),
 		array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"ly-do","type"=>"ly-do",'menu'=>true),
@@ -143,7 +144,7 @@
 			$source = "contact";
 			$template = "contact/contact";
 			$seo->setSeo('type','object');
-			$title_crumb = 'Liên hệ';
+			$title_crumb = 'Contact Us';
 			break;
 
 		case 'gioi-thieu':
@@ -151,7 +152,7 @@
 			$template = "static/static";
 			$type = $com;
 			$seo->setSeo('type','article');
-			$title_crumb = 'Giới thiệu';
+			$title_crumb = 'About Us';
 			break;
 	 
   		case 'tin-tuc':
@@ -159,16 +160,16 @@
 			$template = isset($_GET['id']) ? "news/news_detail" : "news/news";
 			$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
 			$type = $com;
-			$title_crumb = "Tin tức";
+			$title_crumb = "News";
 			break;
 
-		case 'dich-vu':
-			$source = "news";
-			$template = isset($_GET['id']) ? "news/news_detail" : "news/news";
-			$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
-			$type = $com;
-			$title_crumb = "Dịch vụ";
-			break;
+		// case 'dich-vu':
+		// 	$source = "news";
+		// 	$template = isset($_GET['id']) ? "news/news_detail" : "news/news";
+		// 	$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
+		// 	$type = $com;
+		// 	$title_crumb = "Dịch vụ";
+		// 	break;
 
 		case 'ly-do':
 			$source = "news";
@@ -178,13 +179,13 @@
 			$title_crumb = "Lý Do";
 			break;
 
-		case 'cong-trinh':
-			$source = "news";
-			$template = isset($_GET['id']) ? "duan/news_detail" : "duan/news";
-			$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
-			$type = $com;
-			$title_crumb = "Công trình";
-			break;
+		// case 'cong-trinh':
+		// 	$source = "news";
+		// 	$template = isset($_GET['id']) ? "duan/news_detail" : "duan/news";
+		// 	$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
+		// 	$type = $com;
+		// 	$title_crumb = "Công trình";
+		// 	break;
 
 		case 'video':
 			$source = "video";
@@ -194,12 +195,12 @@
 			$title_crumb = "Video";
 			break;
 
-		case 'hinh-anh':
+		case 'menux':
 			$source = "news";
 			$template = "hinhanh/hinhanh";
 			$seo->setSeo('type',isset($_GET['id']) ? "article" : "object");
 			$type = $com;
-			$title_crumb = "Hình Ảnh";
+			$title_crumb = "Menu";
 			break;
  
 		case 'san-pham':
@@ -210,19 +211,19 @@
 			$title_crumb = 'Sản phẩm';
 			break;
 
-		case 'dac-san':
-			$source = "product";
-			$template = isset($_GET['id']) ? "product/product_detail" : "product/product";
-			$seo->setSeo('type','article');
-			$type = 'dac-san';
-			$title_crumb = 'Đặc Sản';
-			break;
+		// case 'dac-san':
+		// 	$source = "product";
+		// 	$template = isset($_GET['id']) ? "product/product_detail" : "product/product";
+		// 	$seo->setSeo('type','article');
+		// 	$type = 'dac-san';
+		// 	$title_crumb = 'Đặc Sản';
+		// 	break;
  	 
 		case 'tim-kiem':
 			$source = "search";
 			$template = "product/product";
 			$seo->setSeo('type','object');
-			$title_crumb = timkiem;
+			$title_crumb = 'Search';
 			break;
 
 		/*case 'tags-san-pham':

@@ -22,7 +22,7 @@
                 <div class="col-md-4" style="padding-bottom: 40px; margin-bottom: 20px;">
                     <div class="bg-nhantin">
                         <div class="nhantin__title">
-                            ĐĂNG KÝ NHẬN TIN
+                            NEWS LETTER
                         </div>
                         <div class="footer__nhantin">
                             <div class="footer__nhantin_box">
@@ -50,7 +50,7 @@
                                     <input type="hidden" name="dknt" value="1">
                                     <input type="hidden" name="contact" value="contact">
                                     <input type="submit" name="submit-contact" class="footer__nhantin--btn "
-                                        value="Gửi đi">
+                                        value="SEND">
                                 </form>
                             </div>
                         </div>

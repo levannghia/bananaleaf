@@ -45,7 +45,7 @@
     /* tin tức */
     $nametype = "video";
     $config['news'][$nametype]['title_main'] = "Video";
-    $config['news'][$nametype]['dropdown'] = true;
+    $config['news'][$nametype]['dropdown'] = false;
     $config['news'][$nametype]['check'] = array('noibat'=> 'Nổi bật');
     $config['news'][$nametype]['view'] = true;
     $config['news'][$nametype]['slug'] = false;
@@ -65,9 +65,10 @@
 
 
     /* tin tức */
-    $nametype = "hinh-anh";
-    $config['news'][$nametype]['title_main'] = "Hình ảnh";
-    $config['news'][$nametype]['dropdown'] = false;
+    $nametype = "menux";
+    $config['news'][$nametype]['title_main'] = "Thực đơn";
+    $config['news'][$nametype]['dropdown'] = true;
+    $config['news'][$nametype]['list'] = true;
     $config['news'][$nametype]['check'] = array('noibat'=> 'Nổi bật');
     $config['news'][$nametype]['view'] = true;
     $config['news'][$nametype]['slug'] = false;
@@ -80,12 +81,26 @@
     $config['news'][$nametype]['noidung'] = false;
     $config['news'][$nametype]['noidung_cke'] = false;
     $config['news'][$nametype]['seo'] = false;
-    $config['news'][$nametype]['width'] = 240;
-    $config['news'][$nametype]['height'] = 200;
-    $config['news'][$nametype]['thumb'] = '240x200x1';
+    $config['news'][$nametype]['width'] = 1000;
+    $config['news'][$nametype]['height'] = 1400;
+    $config['news'][$nametype]['thumb'] = '200x260x2';
     $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
   
-
+    $config['news'][$nametype]['title_main_list'] = "Danh mục cấp 1";
+    $config['news'][$nametype]['images_list'] = false;
+    $config['news'][$nametype]['show_images_list'] = false;
+    $config['news'][$nametype]['slug_list'] = true;
+    $config['news'][$nametype]['check_list'] = array();
+    $config['news'][$nametype]['gallery_list'] = array();
+    $config['news'][$nametype]['mota_list'] = false;
+    $config['news'][$nametype]['mota_cke_list'] = false;
+    $config['news'][$nametype]['noidung_list'] = false;
+    $config['news'][$nametype]['noidung_cke_list'] = false;
+    $config['news'][$nametype]['seo_list'] = false;
+    $config['news'][$nametype]['width_list'] = 320;
+    $config['news'][$nametype]['height_list'] = 240;
+    $config['news'][$nametype]['thumb_list'] = '100x100x1';
+    $config['news'][$nametype]['img_type_list'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
     /* Đánh giá khách hàng */
     // $nametype = "feedback";
@@ -135,21 +150,7 @@
     $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
     /* Tin tức (List) * /
-    $config['news'][$nametype]['title_main_list'] = "Danh mục cấp 1";
-    $config['news'][$nametype]['images_list'] = true;
-    $config['news'][$nametype]['show_images_list'] = true;
-    $config['news'][$nametype]['slug_list'] = true;
-    $config['news'][$nametype]['check_list'] = array();
-    $config['news'][$nametype]['gallery_list'] = array();
-    $config['news'][$nametype]['mota_list'] = false;
-    $config['news'][$nametype]['mota_cke_list'] = false;
-    $config['news'][$nametype]['noidung_list'] = false;
-    $config['news'][$nametype]['noidung_cke_list'] = false;
-    $config['news'][$nametype]['seo_list'] = true;
-    $config['news'][$nametype]['width_list'] = 320;
-    $config['news'][$nametype]['height_list'] = 240;
-    $config['news'][$nametype]['thumb_list'] = '100x100x1';
-    $config['news'][$nametype]['img_type_list'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';*/
+   
 
     
 

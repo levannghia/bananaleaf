@@ -376,7 +376,7 @@ NN_FRAMEWORK.OwlPage = function(){
             responsiveRefreshRate: 200,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     margin: 10,
                 },
                 450: {

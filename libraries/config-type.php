@@ -9,12 +9,12 @@
             //"photo_static" => array("watermark"),
             //"newsletter" => array("dangkybaogia")
         ),*/
-        "Nội dung trang chủ" => array(
-            "photo" => array("slide"),
-            "photo_static" => array("background-tieuchi"),
-            //"tags" => array("tin-tuc"),
-            //"newsletter" => array("dangkytuyendung")
-        )
+        // "Nội dung trang chủ" => array(
+        //     "photo" => array("slide"),
+        //     "photo_static" => array("background-tieuchi"),
+        //     //"tags" => array("tin-tuc"),
+        //     //"newsletter" => array("dangkytuyendung")
+        // )
     );
 
     /* Config type - Product */

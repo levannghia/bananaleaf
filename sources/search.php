@@ -16,7 +16,7 @@
 			$startpoint = ($curPage * $per_page) - $per_page;
 			$limit = " limit ".$startpoint.",".$per_page;
 			$sql = "select photo,ten$lang, tenkhongdauvi, tenkhongdauen, mota$lang, id,gia from #_product where $where order by stt,id desc $limit";
-			$news = $d->rawQuery($sql,$params);
+			$product = $d->rawQuery($sql,$params);
 			$sqlNum = "select count(*) as 'num' from #_product where $where order by stt,id desc";
 			$count = $d->rawQueryOne($sqlNum,$params);
 			$total = $count['num'];

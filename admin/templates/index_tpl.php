@@ -118,9 +118,9 @@ $(function () {
             </form>
                <div id="apexMixedChart"></div>
                    <div class="thongtin">
-                    <p><i class="fas fa-envelope"></i>Email <span>info@sotagroup.vn</span></p>
-                    <p><i class="fas fa-phone-volume"></i>Hotline <span>0939.857.111</span></p>
-                    <p><i class="fab fa-facebook-messenger"></i>Zalo <span><a href="https://zalo.me/0939857111">0939.857.111</a></span></p>
+                    <p><i class="fas fa-envelope"></i>Email <span>tranhoaitrang3001@gmail.com</span></p>
+                    <p><i class="fas fa-phone-volume"></i>Hotline <span></span></p>
+                    <p><i class="fab fa-facebook-messenger"></i>Zalo <span><a href="https://zalo.me/"></a></span></p>
                 </div>
            </div>
        </div>
